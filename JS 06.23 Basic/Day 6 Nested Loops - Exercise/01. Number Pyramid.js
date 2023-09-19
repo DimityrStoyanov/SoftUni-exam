@@ -1,0 +1,5 @@
+function pyramid(input){
+
+
+}
+pyramid()
