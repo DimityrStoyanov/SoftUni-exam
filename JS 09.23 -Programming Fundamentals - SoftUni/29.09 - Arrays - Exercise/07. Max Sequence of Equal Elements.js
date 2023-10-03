@@ -1,8 +1,8 @@
 function maxSeq(arr) {
     let bestSeq = 0
-    let currentBest = 0
+    let currentBest = 1
     let result = 0
-    let arr2 = [];
+   
     for (let i = 0; i < arr.length; i++) {
 
         for (let j = i + 1; j < arr.length; j++) {
@@ -17,12 +17,13 @@ function maxSeq(arr) {
             bestSeq = currentBest
             currentBest = 0
             result = arr[i]
-            arr2.push(result)
         }
-
     }
-    console.log(arr2);
-  
+    let arr2 = []
+    for ( let k = 1; k <= bestSeq; k++){
+        arr2.push(result)
+    }
+  console.log(arr2.join(` `))
 
 
 }
