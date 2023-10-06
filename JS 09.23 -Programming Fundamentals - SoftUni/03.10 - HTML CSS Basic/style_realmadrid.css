@@ -1,0 +1,58 @@
+body {
+    background-color:beige;
+    text-align: center;
+}
+nav {
+background-color: rgb(36, 36, 128);
+}
+
+footer {
+
+    text-decoration: none;
+    color: rgb(12, 10, 10);
+}
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0;
+    padding: 15px;
+}
+h1 {
+    background-color: rgb(36, 36, 128);
+    color: white;
+    text-align: center;
+}
+article h3 {
+    background-color: azure;
+    font-size: 18px;
+    font-style: italic;
+   
+}
+table, th, td {
+    margin:auto;
+    border-color: black;
+    border: 2px solid;
+    border-style: groove;
+    width: 900px;
+}
+article, p {
+    border-color: rgb(93, 148, 211);
+    border: 3px solid;
+    border-style: groove;
+}
+
+body {
+    width: 900px;
+    margin: auto;
+}
+
+
+.newOne {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    ;
+    font-display:unset;
+}
