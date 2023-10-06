@@ -1,5 +1,9 @@
 h1 {
     color: blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: 200px;
 }
 
 ul {
@@ -14,7 +18,8 @@ li {
 
 img {
     width: 25%;
-    height: auto;
+    margin:auto;
+    margin-left:200px;
 }
 
 div {
@@ -25,4 +30,8 @@ div {
     left: 50%;
     
     width: 600px;
+}
+.for_site{
+    width: 600px;
+    margin: auto;
 }
