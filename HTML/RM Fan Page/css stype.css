@@ -1,0 +1,46 @@
+
+body section {
+    width: 400px;
+    border: 15px solid green;
+    background-color: rgb(135, 247, 144);
+    padding: 15px;
+    margin: 15px;
+    float: right;
+}
+
+
+body section h2 {
+    text-decoration-line:underline;
+    text-align: center;
+}
+body aside {
+    width: 200px;
+    border: 15px solid green;
+    background-color: rgb(135, 247, 144);
+    padding: 15px;
+    margin: 15px;
+    position:absolute;
+    float: right;
+    top:auto
+    
+}
+
+li ul {
+   display:  inline;
+    margin: 0;
+    padding: 0;
+}
+
+footer p {
+    display:  inline;
+}
+
+body  {
+    
+    border: 10px solid rgb(23, 0, 128);
+    padding: 10px;
+    margin: 15px;
+    clear: both;
+    float: left;
+    width: 56.66%;
+}

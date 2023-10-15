@@ -1,0 +1,30 @@
+li {
+    display: inline;
+    color: rgb(255, 255, 255);
+    margin: 25px;
+    cursor: pointer;
+
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+    height: 100%;
+    background-color: rgb(116, 180, 240);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    width: auto;
+
+}
+
+body {
+    border-style: solid;
+    border: 5px;
+    background-color: rgb(192, 236, 221);
+    margin: auto;
+    width: auto;
+    
+}
