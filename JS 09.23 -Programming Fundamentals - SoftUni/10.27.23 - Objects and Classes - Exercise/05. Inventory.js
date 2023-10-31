@@ -1,21 +1,20 @@
 function solve(arr) {
-    let result = [];
+    let result = {};
 
     for (let tokens of arr) {
         let currentInfo = tokens.split(` / `)
         let hero = currentInfo.shift()
         let level = Number(currentInfo.shift())
         let items = currentInfo
-        result.push({ name: hero , level: level, items: items})
 
-        for (let currentItem of items) {
-            hero.item = currentItem
+        let obj = {
+            name: hero,
+            level: level,
+            items: items
         }
+        result[hero] = obj
     }
-
-    for (let neshto of result) {
-        console.log(neshto)
-    }
+    console.log(result);
 
 }
 solve([

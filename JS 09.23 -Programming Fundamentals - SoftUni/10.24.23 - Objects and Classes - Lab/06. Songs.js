@@ -18,16 +18,16 @@ function solve(arr) {
         let name = tokens[1];
         let time = tokens[2];
 
-        if ( playlist == `all`){
-        let newSong = new Song(type, name, time)
-        console.log(newSong.name);
-        } else if ( type == playlist){
+        if (playlist == `all`) {
+            let newSong = new Song(type, name, time)
+            console.log(newSong.name);
+        } else if (type == playlist) {
             let newSong = new Song(type, name, time)
             console.log(newSong.name);
         }
     }
 
-  
+
 }
 solve([3,
     'favourite_DownTown_3:14',
@@ -41,9 +41,9 @@ solve([4,
     'favourite_In To The Night_3:58',
     'favourite_Live It Up_3:48',
     'listenLater']
-    )
-    solve([2,
-        'like_Replay_3:15',
-        'ban_Photoshop_3:48',
-        'all']
-        )
+)
+solve([2,
+    'like_Replay_3:15',
+    'ban_Photoshop_3:48',
+    'all']
+)
