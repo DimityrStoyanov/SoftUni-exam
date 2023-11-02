@@ -13,10 +13,10 @@ function solve(arr) {
     }
 
     for (let songs of arr) {
-        let tokens = songs.split(`_`)
-        let type = tokens[0];
-        let name = tokens[1];
-        let time = tokens[2];
+        let [type, name, time] = songs.split(`_`)
+        // let type = tokens[0];
+        // let name = tokens[1];
+        // let time = tokens[2];
 
         if (playlist == `all`) {
             let newSong = new Song(type, name, time)

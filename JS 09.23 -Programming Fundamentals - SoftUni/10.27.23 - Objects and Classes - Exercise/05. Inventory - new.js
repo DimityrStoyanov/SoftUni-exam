@@ -15,6 +15,7 @@ function solve(arr) {
 
     let heroNames = Object.keys(heroDataObj);
 
+
     heroNames.sort((a, b) => heroDataObj[a].level - heroDataObj[b].level);
 
     for (let heroName of heroNames) {

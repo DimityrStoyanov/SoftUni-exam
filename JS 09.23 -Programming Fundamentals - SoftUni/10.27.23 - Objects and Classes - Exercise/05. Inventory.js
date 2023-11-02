@@ -2,10 +2,10 @@ function solve(arr) {
     let result = {};
 
     for (let tokens of arr) {
-        let currentInfo = tokens.split(` / `)
-        let hero = currentInfo.shift()
-        let level = Number(currentInfo.shift())
-        let items = currentInfo
+        let currentInfo = tokens.split(` / `);
+        let hero = currentInfo.shift();
+        let level = Number(currentInfo.shift());
+        let items = currentInfo.shift();
 
         let obj = {
             name: hero,
@@ -13,8 +13,13 @@ function solve(arr) {
             items: items
         }
         result[hero] = obj
+
+
     }
-    console.log(result);
+ 
+    let entries = Object.values(result);
+    console.log(entries.level);
+
 
 }
 solve([
