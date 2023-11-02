@@ -1,13 +1,5 @@
 function solve(arr) {
 
-    class Town {
-        constructor(town, latitude, longitude) {
-            this.town = town;
-            this.latitude = latitude,
-                this.longitude = longitude;
-        }
-    }
-
     for (let param of arr) {
         let tokens = param.split(` | `)
         let town = tokens.shift()
