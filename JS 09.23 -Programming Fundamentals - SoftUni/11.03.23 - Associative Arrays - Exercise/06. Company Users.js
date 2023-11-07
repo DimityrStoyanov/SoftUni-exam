@@ -20,8 +20,6 @@ function solve(arr) {
         }
     }
 
-
-
 }
 solve([
     'SoftUni -> AA12345',
