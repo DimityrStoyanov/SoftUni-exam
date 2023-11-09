@@ -16,4 +16,22 @@ citys.forEach(offer => {
 
 console.log(myObj);
 
+// Creating an object
+let myObject = {
+    key1: 'value1',
+    key2: 'value2',
+    mitko: `ivan`
+  };
+  
+  // Checking if the object has a specific key
+
+  let proba = myObject.mitko
+  let asd = `mitko`
+  console.log(myObject.mitko);
+  if (myObject.hasOwnProperty(asd)) {
+    console.log('myObject has key1');
+  } else {
+    console.log('myObject does not have key1');
+  }
+
 
