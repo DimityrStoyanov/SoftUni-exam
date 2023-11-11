@@ -15,8 +15,6 @@ function solve(words, string) {
 
     }
     console.log(newString);
-
-
 }
 
 // solve('great',
