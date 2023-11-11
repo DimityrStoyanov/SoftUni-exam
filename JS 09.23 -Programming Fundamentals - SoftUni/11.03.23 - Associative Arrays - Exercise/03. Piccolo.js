@@ -5,12 +5,12 @@ function solve(arr) {
         let [action, reg] = car.split(`, `)
         if (action == `IN`) {
             myObj[reg] = 1
-        } else if (action == `OUT`){
+        } else if (action == `OUT`) {
             delete myObj[reg]
         }
     }
     let result = Object.keys(myObj).sort()
-    for ( let reg of result){
+    for (let reg of result) {
         console.log(reg);
     }
 }
