@@ -1,5 +1,5 @@
 function solve(arr) {
-    
+
 
 }
 solve(['ilovepizza', 'ihatevegetables', 'orange'])
