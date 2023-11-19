@@ -1,7 +1,7 @@
 function solve([arr]) {
     let pattern = /\b(?<day>\d{2})([-.\/])(?<month>[A-Z][a-z]{2})\2(?<year>\d{4})\b/g;
-    let result = arr.match(pattern);
     let match = pattern.exec(arr)
+  
 
     while ( match != null){
         let {day, month, year} = match.groups ;
