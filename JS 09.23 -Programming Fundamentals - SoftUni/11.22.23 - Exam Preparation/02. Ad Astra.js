@@ -1,34 +1,27 @@
 function solve(arr) {
     let text = arr[0]
-    let pattern = /(\||#)[A-Za-z\s]+\1(\d{2})\/(\d{2})\/(\d{2})\1(\d+)\1/g;
+    let pattern = /(\||#)(?<product>[A-Za-z\s]+)\1(?<date>(\d{2})\/(\d{2})\/(\d{2}))\1(?<kcal>(\d+))\1/g;
 
-    let matches = text.match(pattern);
+    let matches = text.matchAll(pattern); //изкарва всички съвпадения от RegExp
     let totalCalories = 0
-    let result = {}
+    let result = []
 
     if (matches == null) {
         // Избягваме варианта да няма нито един ден
     } else {
         for (let info of matches) {
-            let startSymbol = info[0]
-            let tokens = info.split(startSymbol)
-            let food = tokens[1];
-            let date = tokens[2];
-            let calories = Number(tokens[3]);
-            totalCalories += calories
-            let dateAndCalories = { [date]: calories }
-            result[food] = dateAndCalories
+            let { product, date, kcal } = info.groups; // взема всички групи в отделник променливи.
+            tri = Number(kcal)
+            totalCalories += Number(kcal)
+            result.push({ product, date, kcal }); // вкарвам в масив обект
         }
     }
     let days = totalCalories / 2000;
     console.log(`You have food to last you for: ${Math.floor(days)} days!`);
 
-    let entries = Object.entries(result);
+    for (let products of result) {
 
-    if (entries.length > 0) {
-        for (let items of entries) {
-            console.log(`Item: ${items[0]}, Best before: ${Object.keys(items[1])}, Nutrition: ${Object.values(items[1])}`)
-        }
+        console.log(`Item: ${products[`product`]}, Best before: ${products[`date`]}, Nutrition: ${products[`kcal`]}`);
     }
 }
 solve([
