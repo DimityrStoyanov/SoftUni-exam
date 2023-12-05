@@ -26,7 +26,7 @@ function solve(arr) {
                 result[plant].countOfRating++
             } else {
                 console.log(`error`)
-               
+
             }
 
         } else if (command == `Update`) {
@@ -35,7 +35,7 @@ function solve(arr) {
                 result[currentPlant].rarity = Number(currentRarity)
             } else {
                 console.log(`error`)
-               
+
             }
 
         } else if (command == `Reset`) {
@@ -44,7 +44,7 @@ function solve(arr) {
                 result[currentPlant].rating = 0
             } else {
                 console.log(`error`)
-                
+
             }
 
         }
@@ -55,24 +55,24 @@ function solve(arr) {
 
     let entries = Object.entries(result);
 
-    
-        console.log(`Plants for the exhibition:`);
-        for (let token of entries) {
-            let plantName = token.shift()
-            let averigeRating = result[plantName].rating / result[plantName].countOfRating
-            console.log(`- ${plantName}; Rarity: ${result[plantName].rarity}; Rating: ${averigeRating.toFixed(2)}`)
-        }
-    
+
+    console.log(`Plants for the exhibition:`);
+    for (let token of entries) {
+        let plantName = token.shift()
+        let averigeRating = result[plantName].rating / result[plantName].countOfRating
+        console.log(`- ${plantName}; Rarity: ${result[plantName].rarity}; Rating: ${averigeRating.toFixed(2)}`)
+    }
+
 }
 solve(["3",
-"Arnoldii<->4",
-"Woodii<->7",
-"Welwitschia<->2",
-"Rate: Woodii - 10",
-"Rate: Mitko - 10",
-"Rate: Welwitschia - 7",
-"Rate: Arnoldii - 3",
-"Rate: Woodii - 5",
-"Update: Woodii - 8",
-"Reset: Arnoldii",
-"Exhibition"])
+    "Arnoldii<->4",
+    "Woodii<->7",
+    "Welwitschia<->2",
+    "Rate: Woodii - 10",
+    "Rate: Mitko - 10",
+    "Rate: Welwitschia - 7",
+    "Rate: Arnoldii - 3",
+    "Rate: Woodii - 5",
+    "Update: Woodii - 8",
+    "Reset: Arnoldii",
+    "Exhibition"])
