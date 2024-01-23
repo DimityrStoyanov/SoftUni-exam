@@ -1,17 +1,34 @@
 function solve(arr) {
-    let result = {}
+    let result = []
     for (let tokens of arr) {
         let alpha = tokens[0]
-        let product = [tokens]
-        if (result.hasOwnProperty(alpha)) {
-            result[alpha] = product.push(...tokens)
-        } else {
-            result[alpha] = product;
+        let [name, price] = tokens.split(` : `)
+        price = Number(price)
+        let info = {
+            name: name,
+            price: price
         }
+        result.push(info)
 
     }
-    console.log(result);
+    result.sort((a, b) => a.name.localeCompare(b.name))
 
+    let finalResult = {};
+    result.forEach(element => {
+        let alphabet = element.name[0]
+        if (!finalResult[alphabet]) {
+            finalResult[alphabet] = []
+        }
+        finalResult[alphabet].push(element)
+
+    });
+
+    for (let letter in finalResult) {
+        console.log(letter)
+        finalResult[letter].forEach(element => {
+            console.log(`  ${element.name}: ${element.price}`)
+        });
+    }
     // За преправяне, трябва да се измисли логика.
 
 }
