@@ -1,3 +1,5 @@
 function solve() {
-  //TODO
+  let textArea = document.getElementById("input")
+  let data = textArea.value;
+  
 }
