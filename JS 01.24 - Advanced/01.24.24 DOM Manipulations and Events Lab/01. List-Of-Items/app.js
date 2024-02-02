@@ -6,5 +6,6 @@ function addItem() {
     let liElement = document.createElement(`li`)
     items.appendChild(liElement).innerText = inputValue
     document.getElementById("newItemText").value = ``
+     
 
 }
