@@ -10,6 +10,7 @@ function focused() {
         let parrent = currentInput.parentElement
         parrent.classList.add('focused')
         return
+        
     }
 
 
