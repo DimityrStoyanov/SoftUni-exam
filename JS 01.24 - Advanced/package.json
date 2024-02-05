@@ -2,5 +2,15 @@
   "dependencies": {
     "chai": "^5.0.3",
     "mocha": "^10.2.0"
-  }
+  },
+  "name": "js-01.24---advanced",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "DS",
+  "license": "MIT",
+  "description": ""
 }
