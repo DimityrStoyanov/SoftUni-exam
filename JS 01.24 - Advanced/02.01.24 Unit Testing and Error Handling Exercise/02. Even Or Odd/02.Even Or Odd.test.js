@@ -13,7 +13,7 @@ describe("isOddOrEven", () => {
     })
 })
 
-describe("Test Againg", () => {
+describe("Test Again", () => {
     it("Testing with string for length", function() {
         assert.equal(isOddOrEven("Teo"), "odd", "result is `odd`")
         assert.equal(isOddOrEven("Vesi"), "even", "result is `even`")
